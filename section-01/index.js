@@ -1,0 +1,13 @@
+var isDone = false;
+console.log('isDone', isDone);
+var decLiteral = 20;
+var hexLiteral = 0x14;
+var binaryLiteral = 20;
+var octalLiteral = 20;
+console.log('octalLiteral', octalLiteral);
+console.log('decLiteral', decLiteral);
+console.log('hexLiteral', hexLiteral);
+console.log('binaryLiteral', binaryLiteral);
+var fullname = 'john';
+fullname = 'cat';
+console.log('fullname', fullname);
