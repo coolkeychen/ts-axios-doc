@@ -11,3 +11,8 @@ console.log('binaryLiteral', binaryLiteral);
 var fullname = 'john';
 fullname = 'cat';
 console.log('fullname', fullname);
+var list = [1, 2, 3];
+console.log('list', list);
+var x;
+x = ['hello', 10];
+console.log('x', x);

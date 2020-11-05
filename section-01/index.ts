@@ -16,3 +16,12 @@ let fullname: string = 'john'
 fullname = 'cat'
 
 console.log('fullname',fullname)
+
+let list: number[] = [1,2,3]
+console.log('list',list);
+
+let x: [string,number]
+x = ['hello',10]
+// 越界元素
+x[3] =1
+console.log('x',x);
