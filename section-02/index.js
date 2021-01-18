@@ -1,3 +1,14 @@
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -8,6 +19,13 @@ var __rest = (this && this.__rest) || function (s, e) {
                 t[p[i]] = s[p[i]];
         }
     return t;
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
 };
 // 闭包
 function f() {
@@ -66,18 +84,18 @@ console.log(sumMatrix(matrix));
 function f3() {
     return b;
 }
-let b;
+var b;
 f3();
 function foo(condition, x) {
     if (condition) {
-        let x = 100;
-        return x;
+        var x_1 = 100;
+        return x_1;
     }
     return x;
 }
 console.log(foo(false, 99));
-let numLivesForCat = 9;
-const kitty = {
+var numLivesForCat = 9;
+var kitty = {
     name: 'hua',
     numLives: numLivesForCat
 };
@@ -90,26 +108,29 @@ kitty.name = 'cat';
 kitty.numLives = numLivesForCat--;
 console.log(kitty.name);
 console.log(kitty.numLives);
-let [, second, , fourth] = [1, 2, 3, 4];
+var _a = [1, 2, 3, 4], second = _a[1], fourth = _a[3];
 console.log('second', second);
 console.log('fourth', fourth);
-let o = {
+var o = {
     a: 'foo',
     b: 12,
     c: 'bar'
 };
-let { a } = o, pass = __rest(o, ["a"]);
+// let {d, f}: { a: string, b: number} = o;
+// console.log('a.string',d);
+// console.log('b.number',f);
+var a = o.a, pass = __rest(o, ["a"]);
 console.log('a', a);
 console.log('pass', pass);
-let first = [1, 2, 3];
-let hh = [4, 5, 6];
-let bothPlus = [0, ...first, ...hh];
+var first = [1, 2, 3];
+var hh = [4, 5, 6];
+var bothPlus = __spreadArrays([0], first, hh);
 console.log('bothPlus', bothPlus);
-let defaults = {
+var defaults = {
     food: 'spicy',
     price: '$10',
     ambiance: 'noisy'
 };
 // let search = { food: 'rice', ...defaults}
-let search = Object.assign(Object.assign({}, defaults), { food: 'rice' });
+var search = __assign(__assign({}, defaults), { food: 'rice' });
 console.log('search', search);

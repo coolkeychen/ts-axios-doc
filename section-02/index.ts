@@ -111,6 +111,10 @@ let o = {
   c: 'bar'
 }
 
+// let {d, f}: { a: string, b: number} = o;
+// console.log('a.string',d);
+// console.log('b.number',f);
+
 let { a, ...pass } = o
 console.log('a',a);
 console.log('pass',pass);
