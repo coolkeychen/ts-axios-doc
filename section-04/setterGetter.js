@@ -2,10 +2,10 @@
  * @Description: 存取器
  * @Author: Cat
  * @Date: 2021-01-20 11:46:39
- * @LastEditTime: 2021-01-20 11:52:06
+ * @LastEditTime: 2021-01-20 14:27:21
  * @LastEditor: Cat
  */
-var passcode = 'secret passcode';
+var passcode = 'secret passcode1';
 var Employee = /** @class */ (function () {
     function Employee() {
     }
